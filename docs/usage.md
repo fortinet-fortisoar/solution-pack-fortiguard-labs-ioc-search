@@ -3,9 +3,15 @@
 
 # Usage
 
-On the IOC search page, enter indicators separated by a line break. Maximum of 10 indicators are allowed. Click the button <img src="./res/icon-ioc-search.svg" alt="IOC search icon"> **Search** when done.
+The Threat Intel Search page can be accessed from two locations:
 
-As an example let's enter the following indicators in the **IOC Search** box and click **Search**:
+1. Select **Threat Intel Search** from the **FortiGuard Labs** navigation menu.
+
+2. Launch the **Threat Intel Search** dashboard.
+
+On the Threat Intel Search page, enter indicators separated by a line break. Maximum of 10 indicators are allowed. Click the button <img src="./res/icon-ioc-search.svg" alt="Threat Intel Search icon"> **Search** when done.
+
+As an example let's enter the following indicators in the **Threat Intel Search** box and click **Search**:
 
 ```
 goggle.com
@@ -15,95 +21,102 @@ goggle.com
 145.239.33.100
 82.102.14.219
 94.23.172.164:80
+1433.eu.org
 ```
 The following is the results page after searching for these IOCs:
 
-![IOC search results page](./res/ioc-search-results.png)
+![Threat Intel Search results page](./res/ioc-search-results.png)
 
-**Spam Sender IP Category**
+Click a record to view its details.
 
-Indicates whether the IP was involved in spam sending activities.
+## Dashboard
 
-**IOC Confidence**
+The dashboard presents a threat intelligence snapshot of a high-risk IOC (`1433.eu.org`) based on *CVEs*, *outbreak mapping*, and *adversary tactics*. The following is a description of each section:
 
-For a known IOC, it indicates the level of confidence in the correctness of the indicator.
-- **low** - likely clean
-- **medium** - suspicious
-- **high** - malicious with strong evidence.
+![Threat Intel Search record details page](./res/ioc-search-record-details.png)
 
-**IOC**
+### AI Summary
 
-The indicator matched in the database given a search query.
+Located at the top-center, this section provides an automated risk analysis summary. For example, for `1433.eu.org` you can see the following:
 
-**IOC Tags**
+- **Risk Score**: 100 (High Risk)
 
-A tag serves as a label to provide context and easy retrieval of tagged items.
+- **Confidence Level**: High
 
-There are several threat tags defined by FortiGuard analysts:
+- **Threat Indicators**: Strong evidence of malicious activity, exploitation attempts, and threat tags.
 
-| Tag                             | Description                                                           |
-|:--------------------------------|:----------------------------------------------------------------------|
-| Malicious Websites              | Sites with malicious intent related to malware.                       |
-| Phishing Websites               | Credential harvesting phishing sites.                                 |
-| PUP                             | Potentially Unwanted Programs.                                        |
-| Sinkhole C2                     | sinkholes operated by threat researchers.                             |
-| Malware CnC                     | Malware command-and-control servers.                                  |
-| PUP SpywareCnC                  | Spyware/PUP command-and-control servers.                              |
-| Compromised Website             | Websites compromised by threat actors to serve for malicious purposes |
-| Potential Malware/Phishing/Spam | Suspicious newly registered domains.                                  |
-| Malvertising                    | Malicious advertising sites.                                          |
+- **Reputation Insight**: Site visited over 1,493 times and tied to multiple geographies.
 
-**IOC Kill Chain Phases**
-Indicates how far the threat actor is in the kill chain stage. This can be used to prioritize alerts.
+### Indicator Overview
 
-Lockheed Martin Cyber Kill Chain Stage:
-- reconnaissance
-- weaponization
-- delivery
-- exploitation
-- installation
-- command-and-control
-- actions-on-objectives
+Displays the risk score as a percentage value of the IOC. For example, for `1433.eu.org` you can see the following:
 
-**IOC Created/Updated Timestamps**
+- Indicator: 1433.eu.org
 
-The timestamp of when we first created the indicator, and last modified the indicator.
+- **Web Filter Category**: Malicious Websites
 
-**Web Filter Risk Score / Type**
+- **IOC Category**: Malware Installation/Traffic
 
-Predicts how likely a domain/ip is malicious within the range of 1-100.
+- **Live Threat Score**: Visualized using a red dial gauge marked at 100 (maximum risk).
 
-*Risk Levels*:
-- 1 - 20 Trustworthy
-- 21 - 50 Low Risk
-- 51 - 70 Moderate Risk
-- 71 - 90 Suspicious
-- 91 - 100 High Risk
+### Tags
 
-Exceptional case:
-- 0 Unknown Risk Score
+A series of tags summarize the following:
 
-Risk Types:
+- Associated CVE identifiers
 
-- malware
-- phishing
-- spam
+- Named threats and exploits (For example: Log4J, Zero Day, Silent Skimmer)
 
-*Domain attributes*:
+- Mapped outbreaks and exploitation techniques
 
-- popularity: low, moderate, high
-    - Higher popularity domains have better reputation.
-- age: young, moderate, matured
-    - The older a domain gets, the less likely it is used for malicious purposes.
-- history (12-month history): malicious, clean
-    - Domains used previously in malicious campaigns have higher risks.
+### Top Visiting Countries
 
-**AI prediction contextual info**:
+The world map displays geo-located information:
 
-- Lexical Model: Domain labels look suspicious.
-- Proximity Model: Domain is suspicious through close proximity to malicious ones.
-- Targeted Brand: Domain is impersonating this brand.
-- Malware Family: Domain is associated with this malware family.
+- Red dots indicate top visitor origins (For example: East Asia, Australia, and South America).
+
+- Useful for understanding global exposure and potential threat spread.
+
+
+### Outbreaks
+
+This section highlights active threat campaigns or vulnerabilities with which the IOC is associated. For example, for `1433.eu.org` you can see the following:
+
+- Ivanti Authentication Bypass
+- PAN-OS GlobalProtect Attack
+- Log4J Vulnerability
+- Progress Telerik UI Attack
+- Ivanti CSA Zero-Day Attack
+
+### CVEs
+
+The CVE panel includes a horizontal scroll list of relevant vulnerabilities. For example, for `1433.eu.org` you can see the following:
+
+- CVEs span from 2017 to 2024
+- Includes critical flaws like `CVE-2024-8190`, `CVE-2023-46805`, `CVE-2017-11317`
+- Helps contextualize how the threat is exploiting known weaknesses
+
+### Kill Chain Phases
+
+This section maps IOCs to Lockheed Martin's **Kill Chain Phases**: `Reconnaissance` > `Weaponization` > `Delivery` > `Exploitation` > `Installation` > `Command & Control` > `Actions`
+
+- The phase in which the IOC currently is highlighted.
+- Indicates that the IOC is tied to **full-lifecycle attack activity**
+
+> [!Note]
+> The phases do not appear highlighted in Mozilla's Firefox browser.
+
+### 30-Day Domain Hosting Risk Profile
+
+Displays hosting reputation and activity over the past month. For example, for `1433.eu.org` you can see the following:
+
+- **Total Domains:** 2
+- **Average Risk Score:** 55
+- **Trust Level Distribution:**
+
+  - High Risk: 1
+  - Suspicious: 1
+  - Moderate, Low, Trustworthy: 0
 
 # Next Steps
 

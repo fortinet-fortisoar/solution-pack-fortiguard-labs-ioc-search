@@ -7,9 +7,9 @@
 
 # Overview
 
-**Unleash the Power of Threat Intelligence with Our FortiGuard Labs IOC Search Solution Pack**
+**Unleash the Power of Threat Intelligence with Our FortiGuard Labs Threat Intel Search Solution Pack**
 
-Empower your SOC analysts with unparalleled visibility into malicious indicators using the FortiGuard Labs IOC Search Solution Pack. This innovative solution seamlessly integrates the powerful capabilities of FortiGuard Labs into FortiSOAR, delivering actionable threat intelligence at your fingertips.
+Empower your SOC analysts with unparalleled visibility into malicious indicators using the FortiGuard Labs Threat Intel Search Solution Pack. This innovative solution seamlessly integrates the powerful capabilities of FortiGuard Labs into FortiSOAR, delivering actionable threat intelligence at your fingertips.
 
 - **Comprehensive IOC Insights**: Access a wealth of global cyber threat intelligence gathered from FortiGuard’s extensive network of over 3 million sensors, proprietary AI-driven web crawlers, and strategic threat-sharing alliances.
 
@@ -23,9 +23,9 @@ Empower your SOC analysts with unparalleled visibility into malicious indicators
 
 ---
 
-![Example information IOC Search](./docs/res/ioc-search-results.png)
+![Example information Threat Intel Search](./docs/res/ioc-search-results.png)
 
-Elevate your threat-hunting capabilities with the FortiGuard Labs IOC Search Solution Pack—turning insights into decisive action.
+Elevate your threat-hunting capabilities with the FortiGuard Labs Threat Intel Search Solution Pack—turning insights into decisive action.
 
 # Next Steps
 

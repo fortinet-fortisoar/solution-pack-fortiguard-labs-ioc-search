@@ -4,13 +4,13 @@
 # Installation
 
 1. To install this solution pack, click **Content Hub** > **Discover**.
-2. From the list of solution pack that appears, search for **FortiGuard Labs IOC Search**.
-3. Click the **FortiGuard Labs IOC Search** solution pack card.
+2. From the list of solution pack that appears, search for **FortiGuard Labs Threat Intel Search**.
+3. Click the **FortiGuard Labs Threat Intel Search** solution pack card.
 4. Click the **Install** button on the lower part of the screen to begin installation.
 
 ## Prerequisites
 
-The **FortiGuard Labs IOC Search** Solution Pack requires the following solution packs to be pre-installed:
+The **FortiGuard Labs Threat Intel Search** Solution Pack requires the following solution packs to be pre-installed:
 
 | Solution Pack Name                | Version          | Purpose                                                  |
 |:----------------------------------|:-----------------|:---------------------------------------------------------|
@@ -18,7 +18,7 @@ The **FortiGuard Labs IOC Search** Solution Pack requires the following solution
 
 # Configuration
 
-**FortiGuard Labs IOC Search** does not require any configuration and is available for use out-of-the-box.
+**FortiGuard Labs Threat Intel Search** does not require any configuration and is available for use out-of-the-box.
 
 # Next Steps
 
