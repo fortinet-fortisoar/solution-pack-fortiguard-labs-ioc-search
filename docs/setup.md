@@ -10,11 +10,13 @@
 
 ## Prerequisites
 
-The **FortiGuard Labs Threat Intel Search** Solution Pack requires the following solution packs to be pre-installed:
+There are no prerequisites to installing this solution pack.
+
+<!-- The **FortiGuard Labs Threat Intel Search** Solution Pack requires the following solution packs to be pre-installed:
 
 | Solution Pack Name                | Version          | Purpose                                                  |
 |:----------------------------------|:-----------------|:---------------------------------------------------------|
-| SOAR Framework                    | v2.1.1 and later | Required for Incident Response modules                   |
+| SOAR Framework                    | v2.1.1 and later | Required for Incident Response modules                   | -->
 
 # Configuration
 
