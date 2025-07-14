@@ -3,7 +3,7 @@
 - **Version**:  1.0.0
 - **Certified**: Yes
 - **Publisher**: Fortinet
-- **Compatible Version**: FortiSOAR v7.6.1 and later
+- **Compatible Version**: FortiSOAR v7.6.3 and later
 
 # Overview
 
@@ -16,10 +16,6 @@ Empower your SOC analysts with unparalleled visibility into malicious indicators
 - **Advanced Threat Context**: Dive deep into detailed IOC profiles, including live risk ratings, kill chain phases, and hosting risk profiles—helping your team pinpoint threats quickly and accurately.
 
 - **Streamlined Investigations**: Utilize our intuitive interface to search and analyze IOCs effortlessly. Enhance workflows by correlating high-risk indicators with ongoing investigations and incidents.
-
-- **Enhanced Security Operations**: Directly export critical IOC data or link records to existing cases, empowering analysts to act faster and smarter when responding to threats.
-
-- **Seamless Integration**: Designed to integrate with FortiAnalyzer, FortiGate Cloud, and FortiSIEM, this solution pack ensures that your organization benefits from a unified security ecosystem.
 
 ---
 
